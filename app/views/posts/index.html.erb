@@ -1,0 +1,8 @@
+<h1>Home</h1>
+<% @posts.each do |post| %>
+	<%= post.title %><br>
+	<%= truncate(post.body, :length => 2) %><br>
+	<%= link_to "Read more", post %><br>
+	<br>
+<% end %>
+
